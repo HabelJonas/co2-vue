@@ -5,7 +5,27 @@
       <router-link to="/about">About</router-link>
     </nav>
   </header>
-  <router-view/>
+  <router-view />
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Impressum</h3>
+          <p>Firmenname GmbH<br>
+            Musterstraße 123<br>
+            12345 Musterstadt<br>
+            Telefon: 0123/456789<br>
+            E-Mail: info@firmenname.de</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Rechtliche Hinweise</h3>
+          <p>Diese Webseite verwendet Cookies, um Ihnen den bestmöglichen Service zu bieten. Durch die weitere Nutzung der
+            Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen finden Sie in unserer
+            Datenschutzerklärung.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style>
