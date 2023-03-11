@@ -1,23 +1,9 @@
-<!-- <template>
-  <div class="home">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-9">
-          <img alt="Vue logo" src="../assets/co2.png">
-          <HelloWorld msg="Welcome to Your Vue.js App" />
-        </div>
-      </div>
-    </div>
-
-  </div>
-</template> -->
-
 <template>
   <div class="home">
     <div class="container-fluid">
       <div class="row">
         <div v-if="isRTL" class="col-md-9 order-md-2">
-          <img alt="Vue logo" src="../assets/co2.png">
+          <img alt="logo" src="../assets/co2.png" style="max-width: 100%; margin-top: 10px; margin-bottom: 10px;">
           <HelloWorld msg="Welcome to Your Vue.js App" />
         </div>
         <div v-else class="col-md-9">

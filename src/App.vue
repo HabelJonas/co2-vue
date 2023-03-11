@@ -35,7 +35,15 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #D9F0FF;
 }
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-right: 20px;
+}
+
 
 nav {
   padding: 30px;
@@ -43,10 +51,21 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #8eaecf;
 }
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+header {
+  background-color: #2D3047;
+  color: aliceblue;
+}
+
+footer {
+  padding: 30px;
+  background-color: #2D3047;
+  color: aliceblue;
 }
 </style>
