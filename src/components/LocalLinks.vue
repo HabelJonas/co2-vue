@@ -46,7 +46,7 @@ export default {
    .local-links {
       bottom: 0;
       left: 0;
-      width: 100%;
+      width: 99%;
       padding: 5px;
       justify-content: center;
    }

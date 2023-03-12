@@ -4,11 +4,11 @@
       <div class="row">
         <div v-if="isRTL" class="col-md-9 order-md-2">
           <img alt="logo" src="../assets/co2.png" style="max-width: 100%; margin-top: 10px; margin-bottom: 10px;">
-          <HelloWorld msg="Welcome to Your Vue.js App" />
+          <Co2Table />
         </div>
         <div v-else class="col-md-9">
-          <img alt="Vue logo" src="../assets/co2.png">
-          <HelloWorld msg="Welcome to Your Vue.js App" />
+          <img alt="logo" src="../assets/co2.png">
+          <Co2Table />
         </div>
         <div v-if="isRTL" class="col-md-3">
           <LocalLinks />
@@ -23,22 +23,22 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Co2Table from '@/components/Co2Table.vue'
 import LocalLinks from '@/components/LocalLinks.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld,
+    Co2Table,
     LocalLinks,
   },
   computed: {
     isRTL() {
       const lang = navigator.language;
       if (lang === "ar" || lang === "he" || lang === "fa" || lang === "ur") {
-        return false;
+        return false; // is not right-to-left
       } else {
-        return true;
+        return true; // is right-to-left
       }
     },
   },
