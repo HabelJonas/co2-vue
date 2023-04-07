@@ -44,7 +44,6 @@ img {
   margin-right: 20px;
 }
 
-
 nav {
   padding: 30px;
 }

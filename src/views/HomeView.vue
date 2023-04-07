@@ -3,11 +3,11 @@
     <div class="container-fluid">
       <div class="row">
         <div v-if="isRTL" class="col-md-9 order-md-2">
-          <img alt="logo" src="../assets/co2.png" style="max-width: 100%; margin-top: 10px; margin-bottom: 10px;">
+          <img alt="logo" src="../assets/logo.png" style="max-width: 100%; margin-top: 10px; margin-bottom: 10px;">
           <Co2Table />
         </div>
         <div v-else class="col-md-9">
-          <img alt="logo" src="../assets/co2.png">
+          <img alt="logo" src="../assets/logo.png">
           <Co2Table />
         </div>
         <div v-if="isRTL" class="col-md-3">
@@ -35,7 +35,10 @@ export default {
   computed: {
     isRTL() {
       const lang = navigator.language;
-      if (lang === "ar" || lang === "he" || lang === "fa" || lang === "ur") {
+      if (lang === "ar" ||
+        lang === "he" ||
+        lang === "fa" ||
+        lang === "ur") {
         return false; // is not right-to-left
       } else {
         return true; // is right-to-left
